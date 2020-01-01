@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shiftend/calendar.dart';
 
 class ShiftPage extends StatelessWidget {
   @override
@@ -10,7 +11,7 @@ class ShiftPage extends StatelessWidget {
         centerTitle: true,
         elevation: 0.0,
       ),
-      body: Center(child: Text("shift"),),
+      body: Calendar(),//body: Calender(),
     );
   }
 }

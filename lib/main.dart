@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shiftend/shift_page.dart';
-import 'package:shiftend/my_page.dart';
+import 'package:shiftend/member_page.dart';
 import 'package:shiftend/setting_page.dart';
 
 void main() => runApp(MyApp());
@@ -29,7 +29,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _currentIndex = 0;
   final _pageWidgets = [
     ShiftPage(),
-    MyPage(),
+    MemberPage(),
     SettingPage(),
   ];
 
@@ -40,7 +40,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.event), title: Text('Shift')),
-          BottomNavigationBarItem(icon: Icon(Icons.account_box), title: Text('MyPage')),
+          BottomNavigationBarItem(icon: Icon(Icons.account_box), title: Text('Member')),
           BottomNavigationBarItem(icon: Icon(Icons.settings), title: Text('Setting')),
         ],
         currentIndex: _currentIndex,
